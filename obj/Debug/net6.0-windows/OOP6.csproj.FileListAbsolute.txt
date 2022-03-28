@@ -1,0 +1,17 @@
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\obj\Debug\net6.0-windows\OOP6.csproj.AssemblyReference.cache
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\obj\Debug\net6.0-windows\OOP6.Form1.resources
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\obj\Debug\net6.0-windows\OOP6.csproj.GenerateResource.cache
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\obj\Debug\net6.0-windows\OOP6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\obj\Debug\net6.0-windows\OOP6.AssemblyInfoInputs.cache
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\obj\Debug\net6.0-windows\OOP6.AssemblyInfo.cs
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\obj\Debug\net6.0-windows\OOP6.csproj.CoreCompileInputs.cache
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\bin\Debug\net6.0-windows\OOP6.exe
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\bin\Debug\net6.0-windows\OOP6.deps.json
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\bin\Debug\net6.0-windows\OOP6.runtimeconfig.json
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\bin\Debug\net6.0-windows\OOP6.dll
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\bin\Debug\net6.0-windows\OOP6.pdb
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\obj\Debug\net6.0-windows\OOP6.dll
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\obj\Debug\net6.0-windows\refint\OOP6.dll
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\obj\Debug\net6.0-windows\OOP6.pdb
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\obj\Debug\net6.0-windows\OOP6.genruntimeconfig.cache
+C:\Users\BigWander\Desktop\edu\Programs\Dotnet\Универ\ООП\OOP6\obj\Debug\net6.0-windows\ref\OOP6.dll
