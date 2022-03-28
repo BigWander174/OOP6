@@ -8,7 +8,6 @@ namespace OOP6.Model
         private Ball _target;
         private SolidBrush _brush;
 
-
         public Drawer(Graphics canvas, Ball ball)
         {
             _canvas = canvas;
