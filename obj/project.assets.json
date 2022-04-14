@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BigWander\\Desktop\\edu\\Programs\\Dotnet\\Универ\\ООП\\OOP6\\OOP6.csproj",
+      "projectUniqueName": "C:\\Users\\BigWander\\Desktop\\edu\\Programs\\Dotnet\\Универ\\ООП\\OOP6 — копия\\OOP6.csproj",
       "projectName": "OOP6",
-      "projectPath": "C:\\Users\\BigWander\\Desktop\\edu\\Programs\\Dotnet\\Универ\\ООП\\OOP6\\OOP6.csproj",
+      "projectPath": "C:\\Users\\BigWander\\Desktop\\edu\\Programs\\Dotnet\\Универ\\ООП\\OOP6 — копия\\OOP6.csproj",
       "packagesPath": "C:\\Users\\BigWander\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BigWander\\Desktop\\edu\\Programs\\Dotnet\\Универ\\ООП\\OOP6\\obj\\",
+      "outputPath": "C:\\Users\\BigWander\\Desktop\\edu\\Programs\\Dotnet\\Универ\\ООП\\OOP6 — копия\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\BigWander\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

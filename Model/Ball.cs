@@ -16,9 +16,9 @@ namespace OOP6.Model
         public Point Position => _position;
         public int Radius => _radius;
 
-        internal void SetNewPosition(int newPositionX, int newPositionY)
+        internal void SetNewPosition(Point newPoint)
         {
-            _position = new Point(newPositionX, newPositionY);
+            _position = newPoint;
         }
     }
 }

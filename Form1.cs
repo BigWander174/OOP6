@@ -8,6 +8,7 @@ namespace OOP6
         private Graphics _graphics;
         private Mover _mover;
         private Drawer _drawer;
+        private double _maxValue = 16.67;
 
         public Form1()
         {
@@ -18,14 +19,21 @@ namespace OOP6
         {
             _graphics = pictureBox1.CreateGraphics();
 
-            var point = new Point(pictureBox1.Location.X / 2, pictureBox1.Location.Y / 2);
+            var point = new Point(this.Width / 2, this.Height / 2);
             var radius = 50;
-
             _ball = new Ball(radius, point);
+
             _mover = new Mover(_ball, pictureBox1);
 
             _drawer = new Drawer(_graphics, _ball);
 
+            SetLabelText();
+            timer.Start();
+        }
+
+        private void SetLabelText()
+        {
+            label2.Text += _maxValue;
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -34,19 +42,27 @@ namespace OOP6
             _drawer.Work();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            var box = (TextBox)sender;
-            try
+            var numerics = sender as NumericUpDown;
+
+            if (numerics.Value == 0)
             {
-                var count = Convert.ToInt32(box.Text);
-                timer.Interval = (int)Math.Ceiling(100.0 / count);
-                timer.Enabled = true;
+                timer.Interval = (int)_maxValue;
+                return;
             }
-            catch (Exception)
-            {
-                timer.Enabled = false;
-            }
+
+            timer.Interval = (int)Math.Ceiling((_maxValue / (double)numerics.Value));
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            _graphics = pictureBox1.CreateGraphics();
+        }
+
+        private void Form1_SizeChanged(object sender, EventArgs e)
+        {
+            _graphics = pictureBox1.CreateGraphics();
         }
     }
 }

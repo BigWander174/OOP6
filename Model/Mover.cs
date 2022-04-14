@@ -1,38 +1,54 @@
-﻿using OOP6.Model;
-
-namespace OOP6.Model
+﻿namespace OOP6.Model
 {
     internal class Mover
     {
         private Ball _ball;
         private Point _vector;
         private PictureBox _field;
-        public Mover(Ball ball, PictureBox field)
+
+        public Mover(Ball ball, PictureBox pictureBox)
         {
             _ball = ball;
-            _field = field;
+            _field = pictureBox;
             _vector = new Point(1, 1);
         }
 
-        public int NewPositionX => _ball.Position.X + _vector.X;
-        public int NewPositionY => _ball.Position.Y + _vector.Y;
-
         public void Work()
         {
-            CalculateDirection();
-            _ball.SetNewPosition(NewPositionX + _vector.X, NewPositionY + _vector.Y);
+            var newPoint = AddPositionWhileUnBound();
+            _ball.SetNewPosition(newPoint);
         }
 
-        private void CalculateDirection()
+        private Point AddPositionWhileUnBound()
         {
-            if (NewPositionX < 0 || NewPositionX + _ball.Radius > _field.Width)
+            var newPositionX = _ball.Position.X;
+            if (_ball.Position.X < 0)
             {
+                newPositionX = 1;
                 _vector.X = -_vector.X;
             }
-            if (NewPositionY < 0 || NewPositionY + _ball.Radius > _field.Height)
+            else if (newPositionX + _ball.Radius > _field.Width)
             {
+                newPositionX = _field.Width - _ball.Radius - 1;
+                _vector.X = -_vector.X;
+            }
+
+            newPositionX += _vector.X;
+
+            var newPositionY = _ball.Position.Y;
+            if (_ball.Position.Y < 0)
+            {
+                newPositionY = 1;
                 _vector.Y = -_vector.Y;
             }
+            else if (newPositionY + _ball.Radius > _field.Height)
+            {
+                newPositionY = _field.Height - _ball.Radius - 1;
+                _vector.Y = -_vector.Y;
+            }
+            newPositionY += _vector.Y;
+
+            return new Point(newPositionX, newPositionY);
         }
     }
 }

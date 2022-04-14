@@ -20,6 +20,5 @@ namespace OOP6.Model
             _canvas.Clear(Color.White);
             _canvas.DrawCircle(_brush, _target.Position, _target.Radius);
         }
-
     }
 }
