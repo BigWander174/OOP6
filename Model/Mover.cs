@@ -50,5 +50,20 @@
 
             return new Point(newPositionX, newPositionY);
         }
+
+        public void SetSpeed(int value)
+        {
+            int newX = value;
+            int newY = value;
+            if (_vector.X < 0)
+            {
+                newX = -newX;
+            }
+            if (_vector.Y < 0)
+            {
+                newY = -newY;
+            }
+            _vector = new Point(newX, newY);
+        }
     }
 }

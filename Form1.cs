@@ -8,7 +8,7 @@ namespace OOP6
         private Graphics _graphics;
         private Mover _mover;
         private Drawer _drawer;
-        private double _maxValue = 16.67;
+        private double _maxValue = 10;
 
         public Form1()
         {
@@ -45,14 +45,12 @@ namespace OOP6
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             var numerics = sender as NumericUpDown;
-
-            if (numerics.Value == 0)
+            if (numerics.Value > 10)
             {
-                timer.Interval = (int)_maxValue;
-                return;
+                numerics.Value = 10;
             }
 
-            timer.Interval = (int)Math.Ceiling((_maxValue / (double)numerics.Value));
+            _mover.SetSpeed((int) numerics?.Value);
         }
 
         private void Form1_Resize(object sender, EventArgs e)

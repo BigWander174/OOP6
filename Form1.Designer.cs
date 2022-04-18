@@ -49,7 +49,7 @@
             // 
             // timer
             // 
-            this.timer.Interval = 1;
+            this.timer.Interval = 5;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // label2
@@ -68,7 +68,7 @@
             this.numericUpDown1.Size = new System.Drawing.Size(150, 27);
             this.numericUpDown1.TabIndex = 8;
             this.numericUpDown1.Value = new decimal(new int[] {
-            100,
+            1,
             0,
             0,
             0});
